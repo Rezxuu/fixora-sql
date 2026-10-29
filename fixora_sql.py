@@ -61,7 +61,7 @@ CSS="""<style>
  .pg{background:#e7f9ee;color:#0a7a3a}.pr{background:#fde7ea;color:#c20017}.py{background:#fff4d6;color:#9a6b00}
  .tile{background:#fff;border-radius:16px;padding:18px 14px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08);font-weight:700;color:#1a1a1a}
  .tile .i{font-size:1.7rem}.srch{width:100%;padding:13px 14px;border:0;border-radius:12px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.08);margin:6px 0 14px}
- .big{background:#E3000F;color:#fff;border-radius:14px;padding:16px;text-align:center;font-weight:800;margin-top:8px} .motto{background:#E3000F;color:#fff;border-radius:16px;padding:16px 18px;margin:0 0 4px} .motto .m{font-weight:800;font-size:1.05rem}.motto .s{font-size:.82rem;color:#ffe0e0;margin-top:3px} .fab{position:fixed;right:calc(50% - 210px);bottom:22px;width:56px;height:56px;border-radius:50%;background:#E3000F;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 14px rgba(0,0,0,.3);text-decoration:none} @media(max-width:460px){.fab{right:18px}}
+ .big{background:#E3000F;color:#fff;border-radius:14px;padding:16px;text-align:center;font-weight:800;margin-top:8px} .motto{background:#E3000F;color:#fff;border-radius:16px;padding:16px 18px;margin:0 0 4px} .motto .m{font-weight:800;font-size:1.05rem}.motto .s{font-size:.82rem;color:#ffe0e0;margin-top:3px} .fab{position:fixed;right:calc(50% - 210px);bottom:22px;width:56px;height:56px;border-radius:50%;background:#E3000F;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 14px rgba(0,0,0,.3);text-decoration:none} @media(max-width:460px){.fab{right:18px}} .twobtn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px} .bo{background:#fff;color:#E3000F;border:2px solid #E3000F;border-radius:14px;padding:14px;text-align:center;font-weight:800} .nav{display:flex;justify-content:space-around;background:#fff;border-radius:14px;margin-top:16px;padding:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)} .nav a{color:#555;text-decoration:none;font-size:.82rem;font-weight:700;text-align:center}.nav .ic{font-size:1.2rem;display:block} .ubar{background:#E3000F;padding:18px 18px 16px;display:flex;align-items:center;justify-content:space-between} .ubar .brand{color:#F2B705;font-weight:900;font-size:1.3rem;letter-spacing:1px;line-height:1} .ubar .brand small{display:block;color:#fff;font-weight:600;font-size:.62rem;letter-spacing:1px;margin-top:2px} .ubar .hi{color:#fff;font-weight:700;font-size:.95rem;margin-right:10px} .ubar .av{width:40px;height:40px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem} .ucard{background:#fff;border-radius:16px;padding:16px 18px;margin:0 16px 12px;box-shadow:0 1px 3px rgba(0,0,0,.08)} .uwrap{padding:14px 0 90px} .loc{display:flex;flex-direction:column} .loc .lab{color:#E3000F;font-size:.8rem;font-weight:700}.loc .val{font-weight:800;margin-top:3px} .usec{font-weight:800;font-size:1.15rem;margin:6px 16px 10px} .ugrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:0 16px} .utile{background:#fff;border-radius:16px;padding:22px 14px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.08)} .utile .ic{width:54px;height:54px;border-radius:50%;background:#FFE0E0;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 10px} .utile .nm{font-weight:800;color:#1a1a1a} .emstate{text-align:center;padding:60px 30px;color:#555}.emstate .bx{width:66px;height:66px;border:2px solid #d8d8d8;border-radius:10px;margin:0 auto 18px} .emstate h3{color:#1a1a1a;font-size:1.3rem;margin:0 0 8px}.emstate p{color:#888;font-size:.95rem;margin:0} .bookbtn{display:inline-block;margin-top:18px;background:#E3000F;color:#fff;font-weight:800;padding:13px 26px;border-radius:999px;text-decoration:none} .ufab{position:fixed;right:calc(50% - 205px);bottom:86px;width:58px;height:58px;border-radius:50%;background:#1a2230;color:#9fb4ff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 14px rgba(0,0,0,.35);text-decoration:none} @media(max-width:460px){.ufab{right:20px}} .tabs{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:440px;background:#fff;display:flex;justify-content:space-around;padding:10px 0;border-top:1px solid #eee} .tabs a{color:#9a9a9a;text-decoration:none;font-size:.72rem;font-weight:700;text-align:center}.tabs a .ic{display:block;font-size:1.15rem;margin-bottom:2px} .tabs a.on{color:#E3000F}
 </style>"""
 def page(b): return "<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='width=device-width, initial-scale=1'><title>Fixora</title>"+CSS+"</head><body><div class=phone>"+b+"</div></body></html>"
 def head(sub): return f'<div class="header"><img src="{LOGO}"><h2>Welcome!</h2><p>{sub}</p></div>'
@@ -86,18 +86,53 @@ def register_body(err="",f=None):
       '<button class=btn>Sign Up</button></form>'
       '<div class=foot>Already have an account? <a href="/">Log in</a></div></div>')
 
+
+def ubar(name):
+    return (f'<div class="ubar"><div class="brand">FIX&#9733;RA<small>ROADSIDE ASSISTANCE</small></div>'
+            f'<div style="display:flex;align-items:center"><span class="hi">Hi, {html.escape(name)}</span>'
+            f'<span class="av">&#128100;</span></div></div>')
+def utabs(active):
+    items=[("home","Home","&#127968;"),("service","Service","&#128295;"),("recent","Recent","&#128197;"),("messages","Messages","&#128172;")]
+    a="".join(f'<a href="/{k}" class="{ "on" if k==active else "" }"><span class="ic">{i}</span>{lbl}</a>' for k,lbl,i in items)
+    return f'<div class="tabs">{a}</div>'
+def ufab():
+    return '<a class="ufab" href="/service" title="Chat / Request">&#128172;</a>'
+
 def home_user(u):
     cats=[("&#128295;","Mechanic"),("&#9981;","Fuel Delivery"),("&#128267;","Battery Jumpstart"),("&#128668;","Towing")]
-    tiles="".join(f'<div class="tile"><div class="i">{i}</div>{n}</div>' for i,n in cats)
-    return bar("Fixora",f"Hi, {html.escape(u['firstName'])}")+('<div class="wrap">'
-      '<div class="motto"><div class="m">Emergency? We\'ve got you.</div>'
-      '<div class="s">Select a service and help will be on the way instantly.</div></div>'
-      '<div style="font-size:.8rem;color:#777;margin-top:14px">&#128205; Your Location</div>'
-      '<div style="font-weight:700;margin:2px 0 8px">Marikina City, NCR</div>'
-      '<div class="sec" style="margin-top:6px">What do you need?</div>'
-      f'<div class="grid">{tiles}</div>'
-      '<div class="big">Proceed</div></div>'
-      '<a class="fab" href="#" title="Chat with Fixora">&#128172;</a>')
+    tiles="".join(f'<div class="utile"><div class="ic">{i}</div><div class="nm">{n}</div></div>' for i,n in cats)
+    return ubar(u['firstName'])+('<div class="uwrap">'
+      '<div class="ucard" style="text-align:center"><div style="color:#E3000F;font-weight:900;font-size:1.15rem">Emergency? We\'ve got you.</div>'
+      '<div style="color:#555;font-size:.9rem;margin-top:4px">Select a service and help will be on the way instantly.</div></div>'
+      '<div class="ucard"><div class="loc"><span class="lab">&#128205; Your Location</span>'
+      '<span class="val">Marikina City, NCR</span></div></div>'
+      '<div class="usec">What do you need?</div>'
+      f'<div class="ugrid">{tiles}</div></div>')+ufab()+utabs("home")
+
+def u_service(u):
+    cats=[("&#128295;","Mechanic"),("&#9981;","Fuel Delivery"),("&#128267;","Battery Jumpstart"),("&#128668;","Towing")]
+    tiles="".join(f'<div class="utile"><div class="ic">{i}</div><div class="nm">{n}</div></div>' for i,n in cats)
+    return ('<div class="ubar" style="justify-content:center"><div style="color:#fff;font-weight:800;font-size:1.25rem">Request a Service</div></div>'
+      '<div class="uwrap">'
+      '<div class="ucard"><div class="loc"><span class="lab">&#128205; Your Location</span><span class="val">Marikina City, NCR</span></div></div>'
+      '<div class="usec">Select a Service</div>'
+      f'<div class="ugrid">{tiles}</div>'
+      '<div class="usec" style="margin-top:18px">Additional Notes</div>'
+      '<div style="padding:0 16px"><textarea placeholder="Describe your issue (optional)..." style="width:100%;min-height:90px;border:0;border-radius:12px;padding:14px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.08);font-family:inherit"></textarea>'
+      '<div style="background:#eef3ff;color:#3355aa;padding:11px 13px;border-radius:10px;font-size:.82rem;margin-top:10px">&#9432; The more details you provide, the faster the mechanic can help.</div>'
+      '<div style="background:#cfcfcf;color:#fff;text-align:center;font-weight:800;padding:15px;border-radius:14px;margin-top:14px">Select a Service First</div></div>'
+      '</div>')+ufab()+utabs("service")
+
+def u_recent(u):
+    return ('<div class="ubar" style="justify-content:center"><div style="color:#fff;font-weight:800;font-size:1.25rem">My Bookings</div></div>'
+      '<div class="uwrap"><div class="emstate"><div class="bx"></div>'
+      '<h3>No bookings yet</h3><p>Your service history will appear here once you book a mechanic.</p></div></div>')+ufab()+utabs("recent")
+
+def u_messages(u):
+    return ('<div class="ubar" style="justify-content:center"><div style="color:#fff;font-weight:800;font-size:1.25rem">Messages</div></div>'
+      '<div class="uwrap"><div class="emstate"><div class="bx"></div>'
+      '<h3>No messages yet</h3><p>Your conversations with mechanics will appear here.</p>'
+      '<a class="bookbtn" href="/service">Book a Service</a></div></div>')+ufab()+utabs("messages")
 
 def home_mechanic(u):
     return bar("Mechanic Dashboard",f"Hi, {html.escape(u['firstName'])}")+('<div class="wrap">'
@@ -107,10 +142,18 @@ def home_mechanic(u):
       '<div class="stat"><div class="n">4.8</div><div class="l">Rating</div></div></div>'
       '<div class="sec">Active Job</div>'
       '<div class="row"><div>Battery Jumpstart<br><small>Antipolo St., Marikina</small></div><span class="pill py">In progress</span></div>'
+      '<div class="twobtn"><div class="big" style="margin-top:0">Start Service</div><div class="bo">Mark Complete</div></div>'
       '<div class="sec">Incoming Requests</div>'
-      '<div class="row"><div>Towing <span class="pill pr">NEW</span><br><small>2.1 km away</small></div><div><a href="#" style="color:#E3000F;font-weight:800;text-decoration:none">Accept</a></div></div>'
-      '<div class="row"><div>Fuel Delivery <span class="pill pr">NEW</span><br><small>3.4 km away</small></div><div><a href="#" style="color:#E3000F;font-weight:800;text-decoration:none">Accept</a></div></div>'
-      '<div class="big">Start Service</div></div>')
+      '<div class="row"><div>Towing <span class="pill pr">NEW</span><br><small>2.1 km away</small></div>'
+      '<div><a href="#" style="color:#888;text-decoration:none;margin-right:10px">Ignore</a><a href="#" style="color:#E3000F;font-weight:800;text-decoration:none">Accept</a></div></div>'
+      '<div class="row"><div>Fuel Delivery <span class="pill pr">NEW</span><br><small>3.4 km away</small></div>'
+      '<div><a href="#" style="color:#888;text-decoration:none;margin-right:10px">Ignore</a><a href="#" style="color:#E3000F;font-weight:800;text-decoration:none">Accept</a></div></div>'
+      '<div class="sec">Job History</div>'
+      '<div class="row"><div>Towing &mdash; EDSA<br><small>Yesterday</small></div><span class="pill pg">Completed</span></div>'
+      '<div class="row"><div>Battery &mdash; Cubao<br><small>2 days ago</small></div><span class="pill pg">Completed</span></div>'
+      '<div class="nav"><a href="#"><span class="ic">&#128100;</span>My Profile</a>'
+      '<a href="#"><span class="ic">&#128172;</span>Messages</a>'
+      '<a href="#"><span class="ic">&#10067;</span>Help</a></div></div>')
 
 def home_admin(u):
     total=conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
@@ -125,7 +168,8 @@ def home_admin(u):
       f'<div class="stat"><div class="n">{mechs}</div><div class="l">Mechanics</div></div>'
       f'<div class="stat"><div class="n">{verified}</div><div class="l">Verified</div></div>'
       f'<div class="stat"><div class="n">{suspended}</div><div class="l">Suspended</div></div></div>'
-      '<div class="grid" style="margin-top:12px">'
+      '<div class="grid3" style="margin-top:12px">'
+      '<div class="stat"><div class="n">3</div><div class="l">Online Now</div></div>'
       '<div class="stat"><div class="n">5</div><div class="l">Active Jobs</div></div>'
       '<div class="stat"><div class="n">&#8369;42k</div><div class="l">Revenue</div></div></div>'
       '<div class="sec">Users</div>'+ulist+
@@ -145,6 +189,13 @@ class H(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path in ("/","/login"): return self._h(200,login_body())
         if self.path=="/register": return self._h(200,register_body())
+        if self.path in ("/home","/service","/recent","/messages"):
+            u={"firstName":"Test User","email":"user@fixora.com","role":"user"}
+            if self.path=="/home": return self._h(200,home_user(u))
+            if self.path=="/service": return self._h(200,u_service(u))
+            if self.path=="/recent": return self._h(200,u_recent(u))
+            if self.path=="/messages": return self._h(200,u_messages(u))
+
         return self._h(404,'<div class="wrap"><h2>404</h2></div>')
     def do_POST(self):
         if self.path=="/login":
