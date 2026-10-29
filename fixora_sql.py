@@ -61,7 +61,7 @@ CSS="""<style>
  .pg{background:#e7f9ee;color:#0a7a3a}.pr{background:#fde7ea;color:#c20017}.py{background:#fff4d6;color:#9a6b00}
  .tile{background:#fff;border-radius:16px;padding:18px 14px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08);font-weight:700;color:#1a1a1a}
  .tile .i{font-size:1.7rem}.srch{width:100%;padding:13px 14px;border:0;border-radius:12px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.08);margin:6px 0 14px}
- .big{background:#E3000F;color:#fff;border-radius:14px;padding:16px;text-align:center;font-weight:800;margin-top:8px}
+ .big{background:#E3000F;color:#fff;border-radius:14px;padding:16px;text-align:center;font-weight:800;margin-top:8px} .motto{background:#E3000F;color:#fff;border-radius:16px;padding:16px 18px;margin:0 0 4px} .motto .m{font-weight:800;font-size:1.05rem}.motto .s{font-size:.82rem;color:#ffe0e0;margin-top:3px} .fab{position:fixed;right:calc(50% - 210px);bottom:22px;width:56px;height:56px;border-radius:50%;background:#E3000F;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 14px rgba(0,0,0,.3);text-decoration:none} @media(max-width:460px){.fab{right:18px}}
 </style>"""
 def page(b): return "<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='width=device-width, initial-scale=1'><title>Fixora</title>"+CSS+"</head><body><div class=phone>"+b+"</div></body></html>"
 def head(sub): return f'<div class="header"><img src="{LOGO}"><h2>Welcome!</h2><p>{sub}</p></div>'
@@ -90,12 +90,14 @@ def home_user(u):
     cats=[("&#128295;","Mechanic"),("&#9981;","Fuel Delivery"),("&#128267;","Battery Jumpstart"),("&#128668;","Towing")]
     tiles="".join(f'<div class="tile"><div class="i">{i}</div>{n}</div>' for i,n in cats)
     return bar("Fixora",f"Hi, {html.escape(u['firstName'])}")+('<div class="wrap">'
-      '<div style="font-size:.8rem;color:#777">&#128205; Your Location</div>'
-      '<div style="font-weight:700;margin:2px 0 12px">Marikina City, NCR</div>'
-      '<div class="sec" style="margin-top:0">What do you need?</div>'
-      '<input class="srch" placeholder="Search services...">'
+      '<div class="motto"><div class="m">Emergency? We\'ve got you.</div>'
+      '<div class="s">Select a service and help will be on the way instantly.</div></div>'
+      '<div style="font-size:.8rem;color:#777;margin-top:14px">&#128205; Your Location</div>'
+      '<div style="font-weight:700;margin:2px 0 8px">Marikina City, NCR</div>'
+      '<div class="sec" style="margin-top:6px">What do you need?</div>'
       f'<div class="grid">{tiles}</div>'
-      '<div class="big">Request a Service</div></div>')
+      '<div class="big">Proceed</div></div>'
+      '<a class="fab" href="#" title="Chat with Fixora">&#128172;</a>')
 
 def home_mechanic(u):
     return bar("Mechanic Dashboard",f"Hi, {html.escape(u['firstName'])}")+('<div class="wrap">'
