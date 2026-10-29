@@ -61,7 +61,7 @@ CSS="""<style>
  .pg{background:#e7f9ee;color:#0a7a3a}.pr{background:#fde7ea;color:#c20017}.py{background:#fff4d6;color:#9a6b00}
  .tile{background:#fff;border-radius:16px;padding:18px 14px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08);font-weight:700;color:#1a1a1a}
  .tile .i{font-size:1.7rem}.srch{width:100%;padding:13px 14px;border:0;border-radius:12px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.08);margin:6px 0 14px}
- .big{background:#E3000F;color:#fff;border-radius:14px;padding:16px;text-align:center;font-weight:800;margin-top:8px} .motto{background:#E3000F;color:#fff;border-radius:16px;padding:16px 18px;margin:0 0 4px} .motto .m{font-weight:800;font-size:1.05rem}.motto .s{font-size:.82rem;color:#ffe0e0;margin-top:3px} .fab{position:fixed;right:calc(50% - 210px);bottom:22px;width:56px;height:56px;border-radius:50%;background:#E3000F;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 14px rgba(0,0,0,.3);text-decoration:none} @media(max-width:460px){.fab{right:18px}} .twobtn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px} .bo{background:#fff;color:#E3000F;border:2px solid #E3000F;border-radius:14px;padding:14px;text-align:center;font-weight:800} .nav{display:flex;justify-content:space-around;background:#fff;border-radius:14px;margin-top:16px;padding:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)} .nav a{color:#555;text-decoration:none;font-size:.82rem;font-weight:700;text-align:center}.nav .ic{font-size:1.2rem;display:block} .ubar{background:#E3000F;padding:18px 18px 16px;display:flex;align-items:center;justify-content:space-between} .ubar .brand{color:#F2B705;font-weight:900;font-size:1.3rem;letter-spacing:1px;line-height:1} .ubar .brand small{display:block;color:#fff;font-weight:600;font-size:.62rem;letter-spacing:1px;margin-top:2px} .ubar .hi{color:#fff;font-weight:700;font-size:.95rem;margin-right:10px} .ubar .av{width:40px;height:40px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem} .ucard{background:#fff;border-radius:16px;padding:16px 18px;margin:0 16px 12px;box-shadow:0 1px 3px rgba(0,0,0,.08)} .uwrap{padding:14px 0 90px} .loc{display:flex;flex-direction:column} .loc .lab{color:#E3000F;font-size:.8rem;font-weight:700}.loc .val{font-weight:800;margin-top:3px} .usec{font-weight:800;font-size:1.15rem;margin:6px 16px 10px} .ugrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:0 16px} .utile{background:#fff;border-radius:16px;padding:22px 14px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.08)} .utile .ic{width:54px;height:54px;border-radius:50%;background:#FFE0E0;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 10px} .utile .nm{font-weight:800;color:#1a1a1a} .emstate{text-align:center;padding:60px 30px;color:#555}.emstate .bx{width:66px;height:66px;border:2px solid #d8d8d8;border-radius:10px;margin:0 auto 18px} .emstate h3{color:#1a1a1a;font-size:1.3rem;margin:0 0 8px}.emstate p{color:#888;font-size:.95rem;margin:0} .bookbtn{display:inline-block;margin-top:18px;background:#E3000F;color:#fff;font-weight:800;padding:13px 26px;border-radius:999px;text-decoration:none} .ufab{position:fixed;right:calc(50% - 205px);bottom:86px;width:58px;height:58px;border-radius:50%;background:#1a2230;color:#9fb4ff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 14px rgba(0,0,0,.35);text-decoration:none} @media(max-width:460px){.ufab{right:20px}} .tabs{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:440px;background:#fff;display:flex;justify-content:space-around;padding:10px 0;border-top:1px solid #eee} .tabs a{color:#9a9a9a;text-decoration:none;font-size:.72rem;font-weight:700;text-align:center}.tabs a .ic{display:block;font-size:1.15rem;margin-bottom:2px} .tabs a.on{color:#E3000F}
+ .big{background:#E3000F;color:#fff;border-radius:14px;padding:16px;text-align:center;font-weight:800;margin-top:8px} .motto{background:#E3000F;color:#fff;border-radius:16px;padding:16px 18px;margin:0 0 4px} .motto .m{font-weight:800;font-size:1.05rem}.motto .s{font-size:.82rem;color:#ffe0e0;margin-top:3px} .fab{position:fixed;right:calc(50% - 210px);bottom:22px;width:56px;height:56px;border-radius:50%;background:#E3000F;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 14px rgba(0,0,0,.3);text-decoration:none} @media(max-width:460px){.fab{right:18px}} .twobtn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px} .bo{background:#fff;color:#E3000F;border:2px solid #E3000F;border-radius:14px;padding:14px;text-align:center;font-weight:800} .nav{display:flex;justify-content:space-around;background:#fff;border-radius:14px;margin-top:16px;padding:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)} .nav a{color:#555;text-decoration:none;font-size:.82rem;font-weight:700;text-align:center}.nav .ic{font-size:1.2rem;display:block} .ubar{background:#E3000F;padding:18px 18px 16px;display:flex;align-items:center;justify-content:space-between} .ubar .brand{color:#F2B705;font-weight:900;font-size:1.3rem;letter-spacing:1px;line-height:1} .ubar .brand small{display:block;color:#fff;font-weight:600;font-size:.62rem;letter-spacing:1px;margin-top:2px} .ubar .hi{color:#fff;font-weight:700;font-size:.95rem;margin-right:10px} .ubar .av{width:40px;height:40px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem} .ucard{background:#fff;border-radius:16px;padding:16px 18px;margin:0 16px 12px;box-shadow:0 1px 3px rgba(0,0,0,.08)} .uwrap{padding:14px 0 90px} .loc{display:flex;flex-direction:column} .loc .lab{color:#E3000F;font-size:.8rem;font-weight:700}.loc .val{font-weight:800;margin-top:3px} .usec{font-weight:800;font-size:1.15rem;margin:6px 16px 10px} .ugrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:0 16px} .utile{background:#fff;border-radius:16px;padding:22px 14px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.08)} .utile .ic{width:54px;height:54px;border-radius:50%;background:#FFE0E0;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 10px} .utile .nm{font-weight:800;color:#1a1a1a} .emstate{text-align:center;padding:60px 30px;color:#555}.emstate .bx{width:66px;height:66px;border:2px solid #d8d8d8;border-radius:10px;margin:0 auto 18px} .emstate h3{color:#1a1a1a;font-size:1.3rem;margin:0 0 8px}.emstate p{color:#888;font-size:.95rem;margin:0} .bookbtn{display:inline-block;margin-top:18px;background:#E3000F;color:#fff;font-weight:800;padding:13px 26px;border-radius:999px;text-decoration:none} .ufab{position:fixed;right:calc(50% - 205px);bottom:86px;width:58px;height:58px;border-radius:50%;background:#1a2230;color:#9fb4ff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 14px rgba(0,0,0,.35);text-decoration:none} @media(max-width:460px){.ufab{right:20px}} .tabs{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:440px;background:#fff;display:flex;justify-content:space-around;padding:10px 0;border-top:1px solid #eee} .tabs a{color:#9a9a9a;text-decoration:none;font-size:.72rem;font-weight:700;text-align:center}.tabs a .ic{display:block;font-size:1.15rem;margin-bottom:2px} .tabs a.on{color:#E3000F} .utile{cursor:pointer;transition:.12s} .utile.on{border:2px solid #E3000F;background:#fff5f5} .utile.on .ic{background:#E3000F;color:#fff}.utile.on .nm{color:#E3000F} .reqbtn{display:block;margin:18px 16px 0;background:#E3000F;color:#fff;border-radius:14px;padding:16px;text-align:center;font-weight:800;text-decoration:none} .chip2{display:inline-flex;align-items:center;gap:6px;background:#ffffff33;color:#fff;font-weight:700;font-size:.8rem;padding:5px 12px;border-radius:999px;margin-top:8px} .spin{width:46px;height:46px;border:4px solid #f0c9cd;border-top-color:#E3000F;border-radius:50%;margin:0 auto;animation:sp 1s linear infinite}@keyframes sp{to{transform:rotate(360deg)}} .sheet{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:440px;background:#fff;border-radius:22px 22px 0 0;padding:20px 18px 26px;box-shadow:0 -4px 20px rgba(0,0,0,.12)} .feat{display:flex;justify-content:space-around;margin:14px 0;text-align:center}.feat .fi{font-size:1.15rem}.feat .ft{font-size:.72rem;color:#666;margin-top:3px} .findbtn{display:block;width:100%;border:0;border-radius:14px;padding:15px;font-weight:800;font-size:1rem;color:#fff;cursor:pointer}
 </style>"""
 def page(b): return "<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='width=device-width, initial-scale=1'><title>Fixora</title>"+CSS+"</head><body><div class=phone>"+b+"</div></body></html>"
 def head(sub): return f'<div class="header"><img src="{LOGO}"><h2>Welcome!</h2><p>{sub}</p></div>'
@@ -98,30 +98,59 @@ def utabs(active):
 def ufab():
     return '<a class="ufab" href="/service" title="Chat / Request">&#128172;</a>'
 
-def home_user(u):
+PICK = '<script>function pick(el){document.querySelectorAll(".utile").forEach(t=>t.classList.remove("on"));el.classList.add("on");var s=el.dataset.s;var b=document.getElementById("reqbtn");b.style.display="block";b.style.background="#E3000F";b.style.color="#fff";b.innerHTML="Request "+s;b.href="/request?service="+encodeURIComponent(s);}</script>'
+
+def _tiles():
     cats=[("&#128295;","Mechanic"),("&#9981;","Fuel Delivery"),("&#128267;","Battery Jumpstart"),("&#128668;","Towing")]
-    tiles="".join(f'<div class="utile"><div class="ic">{i}</div><div class="nm">{n}</div></div>' for i,n in cats)
+    return "".join(f'<div class="utile" data-s="{n}" onclick="pick(this)"><div class="ic">{i}</div><div class="nm">{n}</div></div>' for i,n in cats)
+
+def home_user(u):
     return ubar(u['firstName'])+('<div class="uwrap">'
       '<div class="ucard" style="text-align:center"><div style="color:#E3000F;font-weight:900;font-size:1.15rem">Emergency? We\'ve got you.</div>'
       '<div style="color:#555;font-size:.9rem;margin-top:4px">Select a service and help will be on the way instantly.</div></div>'
-      '<div class="ucard"><div class="loc"><span class="lab">&#128205; Your Location</span>'
-      '<span class="val">Marikina City, NCR</span></div></div>'
+      '<div class="ucard"><div class="loc"><span class="lab">&#128205; Your Location</span><span class="val">Marikina City, NCR</span></div></div>'
       '<div class="usec">What do you need?</div>'
-      f'<div class="ugrid">{tiles}</div></div>')+ufab()+utabs("home")
+      f'<div class="ugrid">{_tiles()}</div>'
+      '<a id="reqbtn" class="reqbtn" style="display:none" href="#">Request</a>'
+      '</div>'+PICK)+ufab()+utabs("home")
 
 def u_service(u):
-    cats=[("&#128295;","Mechanic"),("&#9981;","Fuel Delivery"),("&#128267;","Battery Jumpstart"),("&#128668;","Towing")]
-    tiles="".join(f'<div class="utile"><div class="ic">{i}</div><div class="nm">{n}</div></div>' for i,n in cats)
     return ('<div class="ubar" style="justify-content:center"><div style="color:#fff;font-weight:800;font-size:1.25rem">Request a Service</div></div>'
       '<div class="uwrap">'
       '<div class="ucard"><div class="loc"><span class="lab">&#128205; Your Location</span><span class="val">Marikina City, NCR</span></div></div>'
       '<div class="usec">Select a Service</div>'
-      f'<div class="ugrid">{tiles}</div>'
+      f'<div class="ugrid">{_tiles()}</div>'
       '<div class="usec" style="margin-top:18px">Additional Notes</div>'
       '<div style="padding:0 16px"><textarea placeholder="Describe your issue (optional)..." style="width:100%;min-height:90px;border:0;border-radius:12px;padding:14px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.08);font-family:inherit"></textarea>'
-      '<div style="background:#eef3ff;color:#3355aa;padding:11px 13px;border-radius:10px;font-size:.82rem;margin-top:10px">&#9432; The more details you provide, the faster the mechanic can help.</div>'
-      '<div style="background:#cfcfcf;color:#fff;text-align:center;font-weight:800;padding:15px;border-radius:14px;margin-top:14px">Select a Service First</div></div>'
-      '</div>')+ufab()+utabs("service")
+      '<div style="background:#eef3ff;color:#3355aa;padding:11px 13px;border-radius:10px;font-size:.82rem;margin-top:10px">&#9432; The more details you provide, the faster the mechanic can help.</div></div>'
+      '<a id="reqbtn" class="reqbtn" style="background:#cfcfcf;color:#fff" href="#">Select a Service First</a>'
+      '</div>'+PICK)+ufab()+utabs("service")
+
+def u_request(service):
+    s=html.escape(service or "Mechanic"); sq=urllib.parse.quote(s)
+    return ('<div class="ubar" style="flex-direction:column;align-items:flex-start;gap:4px">'
+      '<div style="display:flex;align-items:center;gap:10px"><a href="/home" style="color:#fff;text-decoration:none;font-size:1.3rem">&#8592;</a>'
+      '<span style="color:#fff;font-weight:800;font-size:1.25rem">Request Service</span></div>'
+      f'<span class="chip2">&#128295; {s}</span></div>'
+      '<div style="padding:80px 20px 150px;text-align:center" id="locbox">'
+      '<div class="spin"></div><div style="color:#777;margin-top:14px">Getting your location...</div></div>'
+      '<div class="sheet"><div style="display:flex;align-items:center;gap:12px">'
+      '<div style="width:48px;height:48px;border-radius:50%;background:#FFE0E0;display:flex;align-items:center;justify-content:center;font-size:1.3rem">&#128295;</div>'
+      f'<div><div style="font-weight:800;font-size:1.15rem">{s}</div>'
+      '<div style="color:#777;font-size:.85rem">Verified mechanics nearby will receive your request</div></div></div>'
+      '<div style="border-top:1px solid #eee;margin:14px 0"></div>'
+      '<div class="feat"><div><div class="fi">&#128205;</div><div class="ft">Your location</div></div>'
+      '<div><div class="fi" style="color:#22C55E">&#10003;</div><div class="ft">Verified mechanics</div></div>'
+      '<div><div class="fi" style="color:#F59E0B">&#9889;</div><div class="ft">Fast response</div></div></div>'
+      f'<button class="findbtn" id="findbtn" disabled style="background:#cfcfcf" onclick="location.href=\'/sent?service={sq}\'">&#128269; Locating...</button></div>'
+      '<script>setTimeout(function(){var b=document.getElementById("findbtn");b.disabled=false;b.style.background="#E3000F";b.innerHTML="&#128269; Find Mechanics Near Me";document.getElementById("locbox").innerHTML="<div style=\'font-size:2.2rem;color:#22C55E\'>&#128205;</div><div style=\'color:#444;margin-top:8px;font-weight:700\'>Marikina City, NCR</div>";},1800);</script>')
+
+def u_sent(service):
+    s=html.escape(service or "Mechanic")
+    return ('<div class="ubar" style="justify-content:center"><div style="color:#fff;font-weight:800;font-size:1.25rem">Request Sent</div></div>'
+      '<div class="uwrap"><div class="emstate"><div style="font-size:3rem;color:#22C55E">&#10003;</div>'
+      f'<h3 style="margin-top:10px">Request sent!</h3><p>Your {s.lower()} request has been sent to verified mechanics nearby. You\'ll be notified when one accepts.</p>'
+      '<a class="bookbtn" href="/home">Back to Home</a></div></div>')+utabs("recent")
 
 def u_recent(u):
     return ('<div class="ubar" style="justify-content:center"><div style="color:#fff;font-weight:800;font-size:1.25rem">My Bookings</div></div>'
@@ -187,16 +216,16 @@ class H(http.server.BaseHTTPRequestHandler):
     def _form(self):
         n=int(self.headers.get("Content-Length",0)); return urllib.parse.parse_qs(self.rfile.read(n).decode("utf-8","replace"))
     def do_GET(self):
-        if self.path in ("/","/login"): return self._h(200,login_body())
-        if self.path=="/register": return self._h(200,register_body())
-        if self.path in ("/home","/service","/recent","/messages"):
+        parsed=urllib.parse.urlparse(self.path); path=parsed.path; q=urllib.parse.parse_qs(parsed.query)
+        if path in ("/","/login"): return self._h(200,login_body())
+        if path=="/register": return self._h(200,register_body())
+        if path in ("/home","/service","/recent","/messages"):
             u={"firstName":"Test User","email":"user@fixora.com","role":"user"}
-            if self.path=="/home": return self._h(200,home_user(u))
-            if self.path=="/service": return self._h(200,u_service(u))
-            if self.path=="/recent": return self._h(200,u_recent(u))
-            if self.path=="/messages": return self._h(200,u_messages(u))
+            return self._h(200,{"/home":home_user,"/service":u_service,"/recent":u_recent,"/messages":u_messages}[path](u))
+        if path=="/request": return self._h(200,u_request(q.get("service",["Mechanic"])[0]))
+        if path=="/sent": return self._h(200,u_sent(q.get("service",["Mechanic"])[0]))
+        return self._h(404,'<div class="uwrap"><div class="emstate"><h3>404</h3></div></div>')
 
-        return self._h(404,'<div class="wrap"><h2>404</h2></div>')
     def do_POST(self):
         if self.path=="/login":
             f=self._form(); email=f.get("email",[""])[0].strip(); pw=f.get("password",[""])[0]
